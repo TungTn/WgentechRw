@@ -130,12 +130,12 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
-}
-
-@media (max-width: 479px) { /** mobile **/
   .card {
     padding: 1rem;
   }
+}
+
+@media (max-width: 479px) { /** mobile **/
   .card__title {
     font-size: 6.681vw;
     line-height: 8.768vw;
