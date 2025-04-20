@@ -125,17 +125,23 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .layout__block { /** If mobile view ==> change to flexbox **/
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 479px) { /** mobile **/
+  .card {
+    padding: 1rem;
+  }
   .card__title {
     font-size: 6.681vw;
     line-height: 8.768vw;
   }
   .layout__image {
     width: 42vw;
-  }
-  .layout__block { /** If mobile view ==> change to flexbox **/
-    display: flex;
-    flex-direction: column-reverse;
   }
 }
 
