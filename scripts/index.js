@@ -1,8 +1,8 @@
 /**
  * Check window width
- * If pc view ==> run
+ * If tablet || pc view ==> run
  */
-if (window.innerWidth >= 1024) {
+if (window.innerWidth >= 768) {
     window.addEventListener('DOMContentLoaded', () => {
         /**
          * Calculate width of images
