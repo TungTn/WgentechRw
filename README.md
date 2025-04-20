@@ -1,2 +1,2 @@
 # WgentechRw
-This is branch fr Wgentech
+This is branch for Wgentech
