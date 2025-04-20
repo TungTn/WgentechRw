@@ -1,0 +1,146 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.layout {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.layout__title {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.375rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.layout__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.layout__top-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.layout__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  width: 23.6875vw;
+  object-fit: cover;
+}
+
+.layout__caption {
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Grid section */
+.layout__grid {
+  margin-top: 2.5rem;
+}
+.layout__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
+  margin-top: .5rem;
+}
+
+.reverse {
+  direction: rtl;
+}
+
+.reverse > * {
+  direction: ltr;
+}
+
+.img-card__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #f5f0ea;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.card__title {
+  font-family: 'Lora', serif;
+  font-size: 4.444vw;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  line-height: 4.625rem;
+}
+
+.card__info-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.card__info-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+
+/** Responsive **/
+@media (max-width: 1024px) { /** tablet **/
+  .card__title {
+    font-size: 6.25vw;
+    line-height: 8.768vw;
+  }
+  .layout__image {
+    width: 36vw;
+  }
+  .layout__caption {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 479px) { /** mobile **/
+  .card__title {
+    font-size: 6.681vw;
+    line-height: 8.768vw;
+  }
+  .layout__image {
+    width: 42vw;
+  }
+  .layout__block { /** If mobile view ==> change to flexbox **/
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 375px) { /** mobile **/
+  .card__title {
+    font-size: 8.533vw;
+    line-height: 10.667vw;
+  }
+}
